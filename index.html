@@ -1,32 +1,75 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Названия сайта во вкладке</title>
+        <style>
+            header {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .left-group {
+                display: flex;
+                align-items: center;
+            }
+
+            .left-group img {
+                width: 100px;
+                height: min-content;
+                margin-right: 50px;
+            }
+
+            .left-group ul {
+                display: flex;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            .left-group ul li {
+                margin-right: 10px;
+            }
+
+            .right-group img {
+                width: 100px;
+            }
+
+            .right-group {
+                display: flex;
+                align-items: center;
+            }
+
+            .right-group button {
+                margin-left: 15px;
+            }
+        </style>
     </head>
     <body>
 
-        <h1>
-            Main title
-        </h1>
-        <h2>
-            title h2
-        </h2>
-        <h3>
-            title h3
-        </h3>
-        <h4>
-            title h4
-        </h4>
-        <h5>
-            title h5
-        </h5>
-        <h6>
-            title h6
-        </h6>
+
+
+    <header>
+        <div class="left-group">
+            <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2019/07/Pepsi_logo_emblem_logotype-2.png?auto=format&q=60&fit=max&w=930" alt="">
+            <ul>
+                <li>First</li>
+                <li>Second</li>
+                <li>Third</li>
+                <li>Fourth</li>
+                <li>Fifth</li>
+            </ul>
+        </div>
+        <div class="right-group">
+            <img src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2019/07/Pepsi_logo_emblem_logotype-2.png?auto=format&q=60&fit=max&w=930" alt="">
+            <button>Sign in</button>
+            <button>Share my work</button>
+        </div>
+    </header>
+
 
     </body>
 </html>
